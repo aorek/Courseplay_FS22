@@ -629,7 +629,7 @@ function FileSystem:init(baseDir, name)
 	self.rootDirectoryView = DirectoryView(self.rootDirectory,nil,0)
 	self:refresh()
 	self.currentDirectoryView = self.rootDirectoryView
-	if not g_currentMission.missionDynamicInfo.isMultiplayer then 
+	if false then 
 		local entries = self.currentDirectoryView:getEntries()
 		self.currentDirectoryView = entries[1]
 	end
